@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/install_to_system"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Install the app to /system partition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="installToSystem"/>
+
+    <TextView
+        android:id="@+id/note_installation"
+        android:layout_below="@id/install_to_system"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notice"/>
+
+    <Button
+        android:id="@+id/do_the_magic"
+        android:text="Do the magic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/note_installation"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doTheMagic" />
+
+    <Button
+        android:id="@+id/remove_the_magic"
+        android:layout_below="@id/do_the_magic"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Remove the magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="removeTheMagic"/>
+
+</RelativeLayout>
